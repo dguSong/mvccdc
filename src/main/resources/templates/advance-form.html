@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {border-style:dashed;}
+table.even {background-color:red;}
+table.odd {background-color:green;}
+
+</style>
+</head>
+<body>
+	<table>
+		<tr><td>CSV File Info</td></tr>
+		<tr th:each = "user,userstatus : ${users1}" th:class="${userstatus.even}?'even':'odd'">
+			<td th:text = "${user.name}"></td>
+		</tr>
+	</table>
+	<br/>
+	<table>
+		<tr><td>table 2 - iterate map</td></tr>
+		<tr th:each="entry : ${users2}">
+			<td th:text="${entry.value.name}"></td>
+		</tr>
+	</table>
+	<br/>
+		<table>
+		<tr><td>table 3 - iterate array</td></tr>
+		<tr th:each="user : ${users3}">
+			<td th:text="${user.name}"></td>
+		</tr>
+	</table>
+</body>
+</html>
