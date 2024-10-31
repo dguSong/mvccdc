@@ -1,4 +1,4 @@
-spring.datasource.url=jdbc:postgresql://192.169.2.114.5432/ccdc
+spring.datasource.url=jdbc:postgresql://192.168.2.114.5432/ccdc
 spring.datasource.username=postgres
 spring.datasource.password=zxcv1583@
 spring.datasource.DriverClassName=org.postgresql.Driver
